@@ -72,7 +72,7 @@ if (file_exists($module_path))
 }
 else
 {
-    echo "N";
+    echo "Контроллер не найден";
 }
 
 //echo $module_path;
