@@ -12,14 +12,14 @@ abstract class basecontroller {
     
     public function run() {
         $this->controller_catalog = $_SERVER['DOCUMENT_ROOT'] . '/module/' . routing::$controller;
-
+/*
         echo "<hr>";
         echo "Вызов контроллера: " . routing::$controller;
         echo "<br>";
         echo "Действие: " . routing::$action;
         echo "<br>";
         echo "Каталог: " . $this->controller_catalog;
-
+*/
         if (!isset($this->config_controller['actions'][routing::$action])) {
             routing::$action = $this->error_action;
         }
@@ -55,7 +55,7 @@ abstract class basecontroller {
         //$this->content = strtolower($this->content);
 
         $this->content_file = $this->controller_catalog . "/controller/view/" . routing::$action . "/d." . routing::$action . ".php";
-        ;
+        
 
         include($layout_file);
     }

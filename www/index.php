@@ -49,7 +49,7 @@ routing::$routes = array(
 routing::$url =  core::$url;
 
 routing::getRoute();
-
+/*
 echo core::$url;
 echo "<br>";
 echo routing::$controller;
@@ -57,7 +57,7 @@ echo "<br>";
 echo routing::$action;
 echo "<br>";
 print_r(routing::$values);
-echo "<br>";
+echo "<br>";*/
 
 
 $module_path = $_SERVER['DOCUMENT_ROOT'] . '/module/' . routing::$controller . '/controller.php';

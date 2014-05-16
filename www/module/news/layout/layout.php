@@ -6,11 +6,10 @@ use system\language\language;
     <head>
         <title><?=$this->title; ?></title>
     </head>
-    <body>
+<body>
         <p>Язык <?=language::$language; ?></p>        
-        
 <?php
 include $this->content_file;
 ?>
-    </body>    
+</body>    
 </html>

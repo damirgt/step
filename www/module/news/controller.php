@@ -25,7 +25,6 @@ class controller extends basecontroller {
     
     //public $error_action = "about";
 
-
     //эту функцию можно не писать, по умолчанию вызовется функция родителя.
     public function run()
     {
